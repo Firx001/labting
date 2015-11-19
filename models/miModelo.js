@@ -47,11 +47,11 @@ sequelize.sync()
         // success(..) ejecuta el manejador una vez creada la tabla
         Videos.count()
           .success(function (count){
-              if(count === 0) {   // la tabla se inicializa solo si está vacía
+             if(count === 0) {   // la tabla se inicializa solo si está vacía
                 Videos.bulkCreate(
                         [
                           {etiquetaVideo: 'Taylor Swift - Shake It Off',   direccionVideo: 'https://youtu.be/nfWlot6h_JM?list=PL2NnS82s_tdU-oqbHD7PUUduA8MsL8TiD', etiquetaVideo1:' PRUEBAS', FECHA:'2015' },
-                          { etiquetaVideo: 'Meghan Trainor - All About That Bass',   direccionVideo: 'https://youtu.be/7PCkvCPvDXk?list=PL2NnS82s_tdU-oqbHD7PUUduA8MsL8TiD',  etiquetaVideo1:' PRUEBAS 2', FECHA:'2015' }
+                          { etiquetaVideo: 'Meghan Trainor - All About That Bass',   direccionVideo: 'https://youtu.be/7PCkvCPvDXk?list=PL2NnS82s_tdU-oqbHD7PUUduA8MsL8TiD',  etiquetaVideo1:' PRUEBAS2', FECHA:'2015' }
                         ]
                 )
 

@@ -12,6 +12,7 @@ router.get('/', function(req, res) {
 
 /*Get Videos page */
 router.get('/videos', videoController.index);
-
+router.get('/videos/1', videoController.index1);
+router.get('/videos/2', videoController.index2);
 
 module.exports = router;
