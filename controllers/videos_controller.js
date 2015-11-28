@@ -6,6 +6,12 @@ exports.index = function(req, res) {
   })
 };
 
+exports.index = function(req, res) {
+  models.Videosrock.findAll().then(function(listado) {
+    res.render('videosrock.ejs', { listado: listado});
+  })
+};
+
 exports.index1 = function(req, res) {
   models.Videos.findAll().then(function(listado) {
     res.render('videos1.ejs', { listado: listado});
