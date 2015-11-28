@@ -14,5 +14,5 @@ router.get('/', function(req, res) {
 router.get('/videos', videoController.index);
 router.get('/videos/1', videoController.index1);
 router.get('/videos/2', videoController.index2);
-
+router.get('/videosrock', videoController.indexrock);
 module.exports = router;
