@@ -55,24 +55,19 @@ sequelize.sync()
                           { etiquetaVideo: 'Meghan Trainor - All About That Bass',   direccionVideo: 'https://youtu.be/7PCkvCPvDXk?list=PL2NnS82s_tdU-oqbHD7PUUduA8MsL8TiD',  etiquetaVideo1:' PRUEBAS2', FECHA:'2015' }
                         ]
                 )
-
-                  .success(function(){console.log('Tabla videos inicializada')});
-              
-              // sequelize.sync([options={}]) crea e inicializa tabla de preguntas en DB
-sequelize.sync()
-  .success(function() {
-        // success(..) ejecuta el manejador una vez creada la tabla
-        Videosrock.count()
-          .success(function (count){
-             if(count === 0) {   // la tabla se inicializa solo si está vacía
                 Videosrock.bulkCreate(
                         [
                           {etiquetaVideorock: 'Nirvana - Come As You Are',   direccionVideorock: 'https://www.youtube.com/watch?v=vabnZ9-ex7o&list=PLB7LggrPIOMVQkk5W2yqFfuC5uwY07PEV&index=5', etiquetaVideo1rock:' rock alternativo', FECHArock:'1992' },
                           { etiquetaVideorock: 'R.E.M. - Losing My Religion (Official Music Video)',   direccionVideorock: 'https://www.youtube.com/watch?v=if-UzXIQ5vw',  etiquetaVideo1rock:' rock alternativo', FECHArock:'1991' }
                         ]
-                )
-
+                        )
                   .success(function(){console.log('Tabla videos inicializada')});
+              
+              
+                
+                
+
+                  
               
 
 }; // if count
