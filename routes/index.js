@@ -15,4 +15,7 @@ router.get('/videos', videoController.index);
 router.get('/videos/1', videoController.index1);
 router.get('/videos/2', videoController.index2);
 router.get('/videosrock', videoController.indexrock);
+router.get('/videosrock/1', videoController.indexrock1);
+router.get('/videosrock/2', videoController.indexrock2);
+
 module.exports = router;
